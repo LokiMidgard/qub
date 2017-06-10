@@ -1,0 +1,8 @@
+node_modules/
+output/test
+source/
+test/
+*.cmd
+*.log
+*.tgz
+tsconfig.json
