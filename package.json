@@ -1,8 +1,8 @@
 {
   "name": "qub",
-  "version": "0.0.1",
-  "main": "output/index.js",
-  "typings": "output/index.d.ts",
+  "version": "0.1.0",
+  "main": "output/source/qub.js",
+  "typings": "output/source/qub.d.ts",
   "scripts": {
     "compile": "tsc -p .",
     "prepublish": "npm run compile"
