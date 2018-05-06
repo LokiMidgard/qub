@@ -2213,503 +2213,503 @@ export function isSpaceOrTab(value: string): boolean {
  * Is the provided character a letter?
  */
 export function isLetter(character: string): boolean {
-    return        ("\u0041" <= character && character <= "\u0059")
-    || (character >= "\u0061" && ("\u0061" <= character && character <= "\u0079")
-    || (character >= "\u00AA" && ("\u00AA" <= character && character <= "\u00AA")
-    || (character >= "\u00BA" && ("\u00BA" <= character && character <= "\u00D5")
-    || (character >= "\u00D8" && ("\u00D8" <= character && character <= "\u00F5")
-    || (character >= "\u00F8" && ("\u00F8" <= character && character <= "\u02C0")
-    || (character >= "\u02C6" && ("\u02C6" <= character && character <= "\u02D0")
-    || (character >= "\u02E0" && ("\u02E0" <= character && character <= "\u02E3")
-    || (character >= "\u02EC" && ("\u02EC" <= character && character <= "\u02EC")
-    || (character >= "\u0370" && ("\u0370" <= character && character <= "\u0373")
-    || (character >= "\u0376" && ("\u0376" <= character && character <= "\u0376")
-    || (character >= "\u037A" && ("\u037A" <= character && character <= "\u037C")
-    || (character >= "\u037F" && ("\u037F" <= character && character <= "\u037F")
-    || (character >= "\u0388" && ("\u0388" <= character && character <= "\u0389")
-    || (character >= "\u038C" && ("\u038C" <= character && character <= "\u03A0")
-    || (character >= "\u03A3" && ("\u03A3" <= character && character <= "\u03F4")
-    || (character >= "\u03F7" && ("\u03F7" <= character && character <= "\u0480")
-    || (character >= "\u048A" && ("\u048A" <= character && character <= "\u052E")
-    || (character >= "\u0531" && ("\u0531" <= character && character <= "\u0555")
-    || (character >= "\u0559" && ("\u0559" <= character && character <= "\u0586")
-    || (character >= "\u05D0" && ("\u05D0" <= character && character <= "\u05E9")
-    || (character >= "\u05F0" && ("\u05F0" <= character && character <= "\u05F1")
-    || (character >= "\u0620" && ("\u0620" <= character && character <= "\u0649")
-    || (character >= "\u066E" && ("\u066E" <= character && character <= "\u066E")
-    || (character >= "\u0671" && ("\u0671" <= character && character <= "\u06D2")
-    || (character >= "\u06D5" && ("\u06D5" <= character && character <= "\u06E5")
-    || (character >= "\u06EE" && ("\u06EE" <= character && character <= "\u06EE")
-    || (character >= "\u06FA" && ("\u06FA" <= character && character <= "\u06FB")
-    || (character >= "\u06FF" && ("\u06FF" <= character && character <= "\u06FF")
-    || (character >= "\u0712" && ("\u0712" <= character && character <= "\u072E")
-    || (character >= "\u074D" && ("\u074D" <= character && character <= "\u07A4")
-    || (character >= "\u07B1" && ("\u07B1" <= character && character <= "\u07E9")
-    || (character >= "\u07F4" && ("\u07F4" <= character && character <= "\u07F4")
-    || (character >= "\u07FA" && ("\u07FA" <= character && character <= "\u0814")
-    || (character >= "\u081A" && ("\u081A" <= character && character <= "\u081A")
-    || (character >= "\u0828" && ("\u0828" <= character && character <= "\u0857")
-    || (character >= "\u0860" && ("\u0860" <= character && character <= "\u0869")
-    || (character >= "\u08A0" && ("\u08A0" <= character && character <= "\u08B3")
-    || (character >= "\u08B6" && ("\u08B6" <= character && character <= "\u08BC")
-    || (character >= "\u0904" && ("\u0904" <= character && character <= "\u0938")
-    || (character >= "\u093D" && ("\u093D" <= character && character <= "\u093D")
-    || (character >= "\u0958" && ("\u0958" <= character && character <= "\u0960")
-    || (character >= "\u0971" && ("\u0971" <= character && character <= "\u097F")
-    || (character >= "\u0985" && ("\u0985" <= character && character <= "\u098B")
-    || (character >= "\u098F" && ("\u098F" <= character && character <= "\u098F")
-    || (character >= "\u0993" && ("\u0993" <= character && character <= "\u09A7")
-    || (character >= "\u09AA" && ("\u09AA" <= character && character <= "\u09AF")
-    || (character >= "\u09B2" && ("\u09B2" <= character && character <= "\u09B8")
-    || (character >= "\u09BD" && ("\u09BD" <= character && character <= "\u09BD")
-    || (character >= "\u09DC" && ("\u09DC" <= character && character <= "\u09DC")
-    || (character >= "\u09DF" && ("\u09DF" <= character && character <= "\u09E0")
-    || (character >= "\u09F0" && ("\u09F0" <= character && character <= "\u09F0")
-    || (character >= "\u09FC" && ("\u09FC" <= character && character <= "\u0A09")
-    || (character >= "\u0A0F" && ("\u0A0F" <= character && character <= "\u0A0F")
-    || (character >= "\u0A13" && ("\u0A13" <= character && character <= "\u0A27")
-    || (character >= "\u0A2A" && ("\u0A2A" <= character && character <= "\u0A2F")
-    || (character >= "\u0A32" && ("\u0A32" <= character && character <= "\u0A32")
-    || (character >= "\u0A35" && ("\u0A35" <= character && character <= "\u0A35")
-    || (character >= "\u0A38" && ("\u0A38" <= character && character <= "\u0A38")
-    || (character >= "\u0A59" && ("\u0A59" <= character && character <= "\u0A5B")
-    || (character >= "\u0A5E" && ("\u0A5E" <= character && character <= "\u0A73")
-    || (character >= "\u0A85" && ("\u0A85" <= character && character <= "\u0A8C")
-    || (character >= "\u0A8F" && ("\u0A8F" <= character && character <= "\u0A90")
-    || (character >= "\u0A93" && ("\u0A93" <= character && character <= "\u0AA7")
-    || (character >= "\u0AAA" && ("\u0AAA" <= character && character <= "\u0AAF")
-    || (character >= "\u0AB2" && ("\u0AB2" <= character && character <= "\u0AB2")
-    || (character >= "\u0AB5" && ("\u0AB5" <= character && character <= "\u0AB8")
-    || (character >= "\u0ABD" && ("\u0ABD" <= character && character <= "\u0ABD")
-    || (character >= "\u0AE0" && ("\u0AE0" <= character && character <= "\u0AE0")
-    || (character >= "\u0AF9" && ("\u0AF9" <= character && character <= "\u0B0B")
-    || (character >= "\u0B0F" && ("\u0B0F" <= character && character <= "\u0B0F")
-    || (character >= "\u0B13" && ("\u0B13" <= character && character <= "\u0B27")
-    || (character >= "\u0B2A" && ("\u0B2A" <= character && character <= "\u0B2F")
-    || (character >= "\u0B32" && ("\u0B32" <= character && character <= "\u0B32")
-    || (character >= "\u0B35" && ("\u0B35" <= character && character <= "\u0B38")
-    || (character >= "\u0B3D" && ("\u0B3D" <= character && character <= "\u0B5C")
-    || (character >= "\u0B5F" && ("\u0B5F" <= character && character <= "\u0B60")
-    || (character >= "\u0B71" && ("\u0B71" <= character && character <= "\u0B71")
-    || (character >= "\u0B85" && ("\u0B85" <= character && character <= "\u0B89")
-    || (character >= "\u0B8E" && ("\u0B8E" <= character && character <= "\u0B8F")
-    || (character >= "\u0B92" && ("\u0B92" <= character && character <= "\u0B94")
-    || (character >= "\u0B99" && ("\u0B99" <= character && character <= "\u0B99")
-    || (character >= "\u0B9C" && ("\u0B9C" <= character && character <= "\u0B9E")
-    || (character >= "\u0BA3" && ("\u0BA3" <= character && character <= "\u0BA3")
-    || (character >= "\u0BA8" && ("\u0BA8" <= character && character <= "\u0BA9")
-    || (character >= "\u0BAE" && ("\u0BAE" <= character && character <= "\u0BB8")
-    || (character >= "\u0BD0" && ("\u0BD0" <= character && character <= "\u0C0B")
-    || (character >= "\u0C0E" && ("\u0C0E" <= character && character <= "\u0C0F")
-    || (character >= "\u0C12" && ("\u0C12" <= character && character <= "\u0C27")
-    || (character >= "\u0C2A" && ("\u0C2A" <= character && character <= "\u0C38")
-    || (character >= "\u0C3D" && ("\u0C3D" <= character && character <= "\u0C59")
-    || (character >= "\u0C60" && ("\u0C60" <= character && character <= "\u0C60")
-    || (character >= "\u0C80" && ("\u0C80" <= character && character <= "\u0C8B")
-    || (character >= "\u0C8E" && ("\u0C8E" <= character && character <= "\u0C8F")
-    || (character >= "\u0C92" && ("\u0C92" <= character && character <= "\u0CA7")
-    || (character >= "\u0CAA" && ("\u0CAA" <= character && character <= "\u0CB2")
-    || (character >= "\u0CB5" && ("\u0CB5" <= character && character <= "\u0CB8")
-    || (character >= "\u0CBD" && ("\u0CBD" <= character && character <= "\u0CBD")
-    || (character >= "\u0CE0" && ("\u0CE0" <= character && character <= "\u0CE0")
-    || (character >= "\u0CF1" && ("\u0CF1" <= character && character <= "\u0CF1")
-    || (character >= "\u0D05" && ("\u0D05" <= character && character <= "\u0D0B")
-    || (character >= "\u0D0E" && ("\u0D0E" <= character && character <= "\u0D0F")
-    || (character >= "\u0D12" && ("\u0D12" <= character && character <= "\u0D39")
-    || (character >= "\u0D3D" && ("\u0D3D" <= character && character <= "\u0D3D")
-    || (character >= "\u0D54" && ("\u0D54" <= character && character <= "\u0D55")
-    || (character >= "\u0D5F" && ("\u0D5F" <= character && character <= "\u0D60")
-    || (character >= "\u0D7A" && ("\u0D7A" <= character && character <= "\u0D7E")
-    || (character >= "\u0D85" && ("\u0D85" <= character && character <= "\u0D95")
-    || (character >= "\u0D9A" && ("\u0D9A" <= character && character <= "\u0DB0")
-    || (character >= "\u0DB3" && ("\u0DB3" <= character && character <= "\u0DBA")
-    || (character >= "\u0DBD" && ("\u0DBD" <= character && character <= "\u0DC5")
-    || (character >= "\u0E01" && ("\u0E01" <= character && character <= "\u0E2F")
-    || (character >= "\u0E32" && ("\u0E32" <= character && character <= "\u0E32")
-    || (character >= "\u0E40" && ("\u0E40" <= character && character <= "\u0E45")
-    || (character >= "\u0E81" && ("\u0E81" <= character && character <= "\u0E81")
-    || (character >= "\u0E84" && ("\u0E84" <= character && character <= "\u0E87")
-    || (character >= "\u0E8A" && ("\u0E8A" <= character && character <= "\u0E8A")
-    || (character >= "\u0E94" && ("\u0E94" <= character && character <= "\u0E96")
-    || (character >= "\u0E99" && ("\u0E99" <= character && character <= "\u0E9E")
-    || (character >= "\u0EA1" && ("\u0EA1" <= character && character <= "\u0EA2")
-    || (character >= "\u0EA5" && ("\u0EA5" <= character && character <= "\u0EA5")
-    || (character >= "\u0EAA" && ("\u0EAA" <= character && character <= "\u0EAA")
-    || (character >= "\u0EAD" && ("\u0EAD" <= character && character <= "\u0EAF")
-    || (character >= "\u0EB2" && ("\u0EB2" <= character && character <= "\u0EB2")
-    || (character >= "\u0EBD" && ("\u0EBD" <= character && character <= "\u0EC3")
-    || (character >= "\u0EC6" && ("\u0EC6" <= character && character <= "\u0EDE")
-    || (character >= "\u0F00" && ("\u0F00" <= character && character <= "\u0F46")
-    || (character >= "\u0F49" && ("\u0F49" <= character && character <= "\u0F6B")
-    || (character >= "\u0F88" && ("\u0F88" <= character && character <= "\u0F8B")
-    || (character >= "\u1000" && ("\u1000" <= character && character <= "\u1029")
-    || (character >= "\u103F" && ("\u103F" <= character && character <= "\u1054")
-    || (character >= "\u105A" && ("\u105A" <= character && character <= "\u105C")
-    || (character >= "\u1061" && ("\u1061" <= character && character <= "\u1065")
-    || (character >= "\u106E" && ("\u106E" <= character && character <= "\u106F")
-    || (character >= "\u1075" && ("\u1075" <= character && character <= "\u1080")
-    || (character >= "\u108E" && ("\u108E" <= character && character <= "\u10C4")
-    || (character >= "\u10C7" && ("\u10C7" <= character && character <= "\u10C7")
-    || (character >= "\u10D0" && ("\u10D0" <= character && character <= "\u10F9")
-    || (character >= "\u10FC" && ("\u10FC" <= character && character <= "\u1247")
-    || (character >= "\u124A" && ("\u124A" <= character && character <= "\u124C")
-    || (character >= "\u1250" && ("\u1250" <= character && character <= "\u1255")
-    || (character >= "\u1258" && ("\u1258" <= character && character <= "\u125C")
-    || (character >= "\u1260" && ("\u1260" <= character && character <= "\u1287")
-    || (character >= "\u128A" && ("\u128A" <= character && character <= "\u128C")
-    || (character >= "\u1290" && ("\u1290" <= character && character <= "\u12AF")
-    || (character >= "\u12B2" && ("\u12B2" <= character && character <= "\u12B4")
-    || (character >= "\u12B8" && ("\u12B8" <= character && character <= "\u12BD")
-    || (character >= "\u12C0" && ("\u12C0" <= character && character <= "\u12C4")
-    || (character >= "\u12C8" && ("\u12C8" <= character && character <= "\u12D5")
-    || (character >= "\u12D8" && ("\u12D8" <= character && character <= "\u130F")
-    || (character >= "\u1312" && ("\u1312" <= character && character <= "\u1314")
-    || (character >= "\u1318" && ("\u1318" <= character && character <= "\u1359")
-    || (character >= "\u1380" && ("\u1380" <= character && character <= "\u138E")
-    || (character >= "\u13A0" && ("\u13A0" <= character && character <= "\u13F4")
-    || (character >= "\u13F8" && ("\u13F8" <= character && character <= "\u13FC")
-    || (character >= "\u1401" && ("\u1401" <= character && character <= "\u166B")
-    || (character >= "\u166F" && ("\u166F" <= character && character <= "\u167E")
-    || (character >= "\u1681" && ("\u1681" <= character && character <= "\u1699")
-    || (character >= "\u16A0" && ("\u16A0" <= character && character <= "\u16E9")
-    || (character >= "\u16F1" && ("\u16F1" <= character && character <= "\u16F7")
-    || (character >= "\u1700" && ("\u1700" <= character && character <= "\u170B")
-    || (character >= "\u170E" && ("\u170E" <= character && character <= "\u1710")
-    || (character >= "\u1720" && ("\u1720" <= character && character <= "\u1730")
-    || (character >= "\u1740" && ("\u1740" <= character && character <= "\u1750")
-    || (character >= "\u1760" && ("\u1760" <= character && character <= "\u176B")
-    || (character >= "\u176E" && ("\u176E" <= character && character <= "\u176F")
-    || (character >= "\u1780" && ("\u1780" <= character && character <= "\u17B2")
-    || (character >= "\u17D7" && ("\u17D7" <= character && character <= "\u17D7")
-    || (character >= "\u1820" && ("\u1820" <= character && character <= "\u1876")
-    || (character >= "\u1880" && ("\u1880" <= character && character <= "\u1883")
-    || (character >= "\u1887" && ("\u1887" <= character && character <= "\u18A7")
-    || (character >= "\u18AA" && ("\u18AA" <= character && character <= "\u18F4")
-    || (character >= "\u1900" && ("\u1900" <= character && character <= "\u191D")
-    || (character >= "\u1950" && ("\u1950" <= character && character <= "\u196C")
-    || (character >= "\u1970" && ("\u1970" <= character && character <= "\u1973")
-    || (character >= "\u1980" && ("\u1980" <= character && character <= "\u19AA")
-    || (character >= "\u19B0" && ("\u19B0" <= character && character <= "\u19C8")
-    || (character >= "\u1A00" && ("\u1A00" <= character && character <= "\u1A15")
-    || (character >= "\u1A20" && ("\u1A20" <= character && character <= "\u1A53")
-    || (character >= "\u1AA7" && ("\u1AA7" <= character && character <= "\u1B32")
-    || (character >= "\u1B45" && ("\u1B45" <= character && character <= "\u1B4A")
-    || (character >= "\u1B83" && ("\u1B83" <= character && character <= "\u1B9F")
-    || (character >= "\u1BAE" && ("\u1BAE" <= character && character <= "\u1BAE")
-    || (character >= "\u1BBA" && ("\u1BBA" <= character && character <= "\u1BE4")
-    || (character >= "\u1C00" && ("\u1C00" <= character && character <= "\u1C22")
-    || (character >= "\u1C4D" && ("\u1C4D" <= character && character <= "\u1C4E")
-    || (character >= "\u1C5A" && ("\u1C5A" <= character && character <= "\u1C7C")
-    || (character >= "\u1C80" && ("\u1C80" <= character && character <= "\u1C87")
-    || (character >= "\u1CE9" && ("\u1CE9" <= character && character <= "\u1CEB")
-    || (character >= "\u1CEE" && ("\u1CEE" <= character && character <= "\u1CF0")
-    || (character >= "\u1CF5" && ("\u1CF5" <= character && character <= "\u1CF5")
-    || (character >= "\u1D00" && ("\u1D00" <= character && character <= "\u1DBE")
-    || (character >= "\u1E00" && ("\u1E00" <= character && character <= "\u1F14")
-    || (character >= "\u1F18" && ("\u1F18" <= character && character <= "\u1F1C")
-    || (character >= "\u1F20" && ("\u1F20" <= character && character <= "\u1F44")
-    || (character >= "\u1F48" && ("\u1F48" <= character && character <= "\u1F4C")
-    || (character >= "\u1F50" && ("\u1F50" <= character && character <= "\u1F56")
-    || (character >= "\u1F59" && ("\u1F59" <= character && character <= "\u1F59")
-    || (character >= "\u1F5D" && ("\u1F5D" <= character && character <= "\u1F7C")
-    || (character >= "\u1F80" && ("\u1F80" <= character && character <= "\u1FB3")
-    || (character >= "\u1FB6" && ("\u1FB6" <= character && character <= "\u1FBB")
-    || (character >= "\u1FBE" && ("\u1FBE" <= character && character <= "\u1FC3")
-    || (character >= "\u1FC6" && ("\u1FC6" <= character && character <= "\u1FCB")
-    || (character >= "\u1FD0" && ("\u1FD0" <= character && character <= "\u1FD2")
-    || (character >= "\u1FD6" && ("\u1FD6" <= character && character <= "\u1FDA")
-    || (character >= "\u1FE0" && ("\u1FE0" <= character && character <= "\u1FEB")
-    || (character >= "\u1FF2" && ("\u1FF2" <= character && character <= "\u1FF3")
-    || (character >= "\u1FF6" && ("\u1FF6" <= character && character <= "\u1FFB")
-    || (character >= "\u2071" && ("\u2071" <= character && character <= "\u2071")
-    || (character >= "\u2090" && ("\u2090" <= character && character <= "\u209B")
-    || (character >= "\u2102" && ("\u2102" <= character && character <= "\u2102")
-    || (character >= "\u210A" && ("\u210A" <= character && character <= "\u2112")
-    || (character >= "\u2115" && ("\u2115" <= character && character <= "\u211C")
-    || (character >= "\u2124" && ("\u2124" <= character && character <= "\u2124")
-    || (character >= "\u2128" && ("\u2128" <= character && character <= "\u212C")
-    || (character >= "\u212F" && ("\u212F" <= character && character <= "\u2138")
-    || (character >= "\u213C" && ("\u213C" <= character && character <= "\u213E")
-    || (character >= "\u2145" && ("\u2145" <= character && character <= "\u2148")
-    || (character >= "\u214E" && ("\u214E" <= character && character <= "\u2183")
-    || (character >= "\u2C00" && ("\u2C00" <= character && character <= "\u2C2D")
-    || (character >= "\u2C30" && ("\u2C30" <= character && character <= "\u2C5D")
-    || (character >= "\u2C60" && ("\u2C60" <= character && character <= "\u2CE3")
-    || (character >= "\u2CEB" && ("\u2CEB" <= character && character <= "\u2CED")
-    || (character >= "\u2CF2" && ("\u2CF2" <= character && character <= "\u2CF2")
-    || (character >= "\u2D00" && ("\u2D00" <= character && character <= "\u2D24")
-    || (character >= "\u2D27" && ("\u2D27" <= character && character <= "\u2D27")
-    || (character >= "\u2D30" && ("\u2D30" <= character && character <= "\u2D66")
-    || (character >= "\u2D6F" && ("\u2D6F" <= character && character <= "\u2D95")
-    || (character >= "\u2DA0" && ("\u2DA0" <= character && character <= "\u2DA5")
-    || (character >= "\u2DA8" && ("\u2DA8" <= character && character <= "\u2DAD")
-    || (character >= "\u2DB0" && ("\u2DB0" <= character && character <= "\u2DB5")
-    || (character >= "\u2DB8" && ("\u2DB8" <= character && character <= "\u2DBD")
-    || (character >= "\u2DC0" && ("\u2DC0" <= character && character <= "\u2DC5")
-    || (character >= "\u2DC8" && ("\u2DC8" <= character && character <= "\u2DCD")
-    || (character >= "\u2DD0" && ("\u2DD0" <= character && character <= "\u2DD5")
-    || (character >= "\u2DD8" && ("\u2DD8" <= character && character <= "\u2DDD")
-    || (character >= "\u2E2F" && ("\u2E2F" <= character && character <= "\u3005")
-    || (character >= "\u3031" && ("\u3031" <= character && character <= "\u3034")
-    || (character >= "\u303B" && ("\u303B" <= character && character <= "\u303B")
-    || (character >= "\u3041" && ("\u3041" <= character && character <= "\u3095")
-    || (character >= "\u309D" && ("\u309D" <= character && character <= "\u309E")
-    || (character >= "\u30A1" && ("\u30A1" <= character && character <= "\u30F9")
-    || (character >= "\u30FC" && ("\u30FC" <= character && character <= "\u30FE")
-    || (character >= "\u3105" && ("\u3105" <= character && character <= "\u312D")
-    || (character >= "\u3131" && ("\u3131" <= character && character <= "\u318D")
-    || (character >= "\u31A0" && ("\u31A0" <= character && character <= "\u31B9")
-    || (character >= "\u31F0" && ("\u31F0" <= character && character <= "\u31FE")
-    || (character >= "\u3400" && ("\u3400" <= character && character <= "\u3400")
-    || (character >= "\u4E00" && ("\u4E00" <= character && character <= "\u4E00")
-    || (character >= "\uA000" && ("\uA000" <= character && character <= "\uA48B")
-    || (character >= "\uA4D0" && ("\uA4D0" <= character && character <= "\uA4FC")
-    || (character >= "\uA500" && ("\uA500" <= character && character <= "\uA60B")
-    || (character >= "\uA610" && ("\uA610" <= character && character <= "\uA61E")
-    || (character >= "\uA62A" && ("\uA62A" <= character && character <= "\uA62A")
-    || (character >= "\uA640" && ("\uA640" <= character && character <= "\uA66D")
-    || (character >= "\uA67F" && ("\uA67F" <= character && character <= "\uA69C")
-    || (character >= "\uA6A0" && ("\uA6A0" <= character && character <= "\uA6E4")
-    || (character >= "\uA717" && ("\uA717" <= character && character <= "\uA71E")
-    || (character >= "\uA722" && ("\uA722" <= character && character <= "\uA787")
-    || (character >= "\uA78B" && ("\uA78B" <= character && character <= "\uA7AD")
-    || (character >= "\uA7B0" && ("\uA7B0" <= character && character <= "\uA7B6")
-    || (character >= "\uA7F7" && ("\uA7F7" <= character && character <= "\uA800")
-    || (character >= "\uA803" && ("\uA803" <= character && character <= "\uA804")
-    || (character >= "\uA807" && ("\uA807" <= character && character <= "\uA809")
-    || (character >= "\uA80C" && ("\uA80C" <= character && character <= "\uA821")
-    || (character >= "\uA840" && ("\uA840" <= character && character <= "\uA872")
-    || (character >= "\uA882" && ("\uA882" <= character && character <= "\uA8B2")
-    || (character >= "\uA8F2" && ("\uA8F2" <= character && character <= "\uA8F6")
-    || (character >= "\uA8FB" && ("\uA8FB" <= character && character <= "\uA8FB")
-    || (character >= "\uA90A" && ("\uA90A" <= character && character <= "\uA924")
-    || (character >= "\uA930" && ("\uA930" <= character && character <= "\uA945")
-    || (character >= "\uA960" && ("\uA960" <= character && character <= "\uA97B")
-    || (character >= "\uA984" && ("\uA984" <= character && character <= "\uA9B1")
-    || (character >= "\uA9CF" && ("\uA9CF" <= character && character <= "\uA9E3")
-    || (character >= "\uA9E6" && ("\uA9E6" <= character && character <= "\uA9EE")
-    || (character >= "\uA9FA" && ("\uA9FA" <= character && character <= "\uA9FD")
-    || (character >= "\uAA00" && ("\uAA00" <= character && character <= "\uAA27")
-    || (character >= "\uAA40" && ("\uAA40" <= character && character <= "\uAA41")
-    || (character >= "\uAA44" && ("\uAA44" <= character && character <= "\uAA4A")
-    || (character >= "\uAA60" && ("\uAA60" <= character && character <= "\uAA75")
-    || (character >= "\uAA7A" && ("\uAA7A" <= character && character <= "\uAAAE")
-    || (character >= "\uAAB1" && ("\uAAB1" <= character && character <= "\uAAB5")
-    || (character >= "\uAAB9" && ("\uAAB9" <= character && character <= "\uAABC")
-    || (character >= "\uAAC0" && ("\uAAC0" <= character && character <= "\uAAC0")
-    || (character >= "\uAADB" && ("\uAADB" <= character && character <= "\uAADC")
-    || (character >= "\uAAE0" && ("\uAAE0" <= character && character <= "\uAAE9")
-    || (character >= "\uAAF2" && ("\uAAF2" <= character && character <= "\uAAF3")
-    || (character >= "\uAB01" && ("\uAB01" <= character && character <= "\uAB05")
-    || (character >= "\uAB09" && ("\uAB09" <= character && character <= "\uAB0D")
-    || (character >= "\uAB11" && ("\uAB11" <= character && character <= "\uAB15")
-    || (character >= "\uAB20" && ("\uAB20" <= character && character <= "\uAB25")
-    || (character >= "\uAB28" && ("\uAB28" <= character && character <= "\uAB2D")
-    || (character >= "\uAB30" && ("\uAB30" <= character && character <= "\uAB59")
-    || (character >= "\uAB5C" && ("\uAB5C" <= character && character <= "\uAB64")
-    || (character >= "\uAB70" && ("\uAB70" <= character && character <= "\uABE1")
-    || (character >= "\uAC00" && ("\uAC00" <= character && character <= "\uAC00")
-    || (character >= "\uD7B0" && ("\uD7B0" <= character && character <= "\uD7C5")
-    || (character >= "\uD7CB" && ("\uD7CB" <= character && character <= "\uD7FA")
-    || (character >= "\uF900" && ("\uF900" <= character && character <= "\uFA6C")
-    || (character >= "\uFA70" && ("\uFA70" <= character && character <= "\uFAD8")
-    || (character >= "\uFB00" && ("\uFB00" <= character && character <= "\uFB05")
-    || (character >= "\uFB13" && ("\uFB13" <= character && character <= "\uFB16")
-    || (character >= "\uFB1D" && ("\uFB1D" <= character && character <= "\uFB27")
-    || (character >= "\uFB2A" && ("\uFB2A" <= character && character <= "\uFB35")
-    || (character >= "\uFB38" && ("\uFB38" <= character && character <= "\uFB3B")
-    || (character >= "\uFB3E" && ("\uFB3E" <= character && character <= "\uFB40")
-    || (character >= "\uFB43" && ("\uFB43" <= character && character <= "\uFB43")
-    || (character >= "\uFB46" && ("\uFB46" <= character && character <= "\uFBB0")
-    || (character >= "\uFBD3" && ("\uFBD3" <= character && character <= "\uFD3C")
-    || (character >= "\uFD50" && ("\uFD50" <= character && character <= "\uFD8E")
-    || (character >= "\uFD92" && ("\uFD92" <= character && character <= "\uFDC6")
-    || (character >= "\uFDF0" && ("\uFDF0" <= character && character <= "\uFDFA")
-    || (character >= "\uFE70" && ("\uFE70" <= character && character <= "\uFE73")
-    || (character >= "\uFE76" && ("\uFE76" <= character && character <= "\uFEFB")
-    || (character >= "\uFF21" && ("\uFF21" <= character && character <= "\uFF39")
-    || (character >= "\uFF41" && ("\uFF41" <= character && character <= "\uFF59")
-    || (character >= "\uFF66" && ("\uFF66" <= character && character <= "\uFFBD")
-    || (character >= "\uFFC2" && ("\uFFC2" <= character && character <= "\uFFC6")
-    || (character >= "\uFFCA" && ("\uFFCA" <= character && character <= "\uFFCE")
-    || (character >= "\uFFD2" && ("\uFFD2" <= character && character <= "\uFFD6")
-    || (character >= "\uFFDA" && ("\uFFDA" <= character && character <= "\uFFDB")
-    || (character >= "\u10000" && ("\u10000" <= character && character <= "\u1000A")
-    || (character >= "\u1000D" && ("\u1000D" <= character && character <= "\u10025")
-    || (character >= "\u10028" && ("\u10028" <= character && character <= "\u10039")
-    || (character >= "\u1003C" && ("\u1003C" <= character && character <= "\u1003C")
-    || (character >= "\u1003F" && ("\u1003F" <= character && character <= "\u1004C")
-    || (character >= "\u10050" && ("\u10050" <= character && character <= "\u1005C")
-    || (character >= "\u10080" && ("\u10080" <= character && character <= "\u100F9")
-    || (character >= "\u10280" && ("\u10280" <= character && character <= "\u1029B")
-    || (character >= "\u102A0" && ("\u102A0" <= character && character <= "\u102CF")
-    || (character >= "\u10300" && ("\u10300" <= character && character <= "\u1031E")
-    || (character >= "\u1032D" && ("\u1032D" <= character && character <= "\u1033F")
-    || (character >= "\u10342" && ("\u10342" <= character && character <= "\u10348")
-    || (character >= "\u10350" && ("\u10350" <= character && character <= "\u10374")
-    || (character >= "\u10380" && ("\u10380" <= character && character <= "\u1039C")
-    || (character >= "\u103A0" && ("\u103A0" <= character && character <= "\u103C2")
-    || (character >= "\u103C8" && ("\u103C8" <= character && character <= "\u103CE")
-    || (character >= "\u10400" && ("\u10400" <= character && character <= "\u1049C")
-    || (character >= "\u104B0" && ("\u104B0" <= character && character <= "\u104D2")
-    || (character >= "\u104D8" && ("\u104D8" <= character && character <= "\u104FA")
-    || (character >= "\u10500" && ("\u10500" <= character && character <= "\u10526")
-    || (character >= "\u10530" && ("\u10530" <= character && character <= "\u10562")
-    || (character >= "\u10600" && ("\u10600" <= character && character <= "\u10735")
-    || (character >= "\u10740" && ("\u10740" <= character && character <= "\u10754")
-    || (character >= "\u10760" && ("\u10760" <= character && character <= "\u10766")
-    || (character >= "\u10800" && ("\u10800" <= character && character <= "\u10804")
-    || (character >= "\u10808" && ("\u10808" <= character && character <= "\u10834")
-    || (character >= "\u10837" && ("\u10837" <= character && character <= "\u10837")
-    || (character >= "\u1083C" && ("\u1083C" <= character && character <= "\u10854")
-    || (character >= "\u10860" && ("\u10860" <= character && character <= "\u10875")
-    || (character >= "\u10880" && ("\u10880" <= character && character <= "\u1089D")
-    || (character >= "\u108E0" && ("\u108E0" <= character && character <= "\u108F1")
-    || (character >= "\u108F4" && ("\u108F4" <= character && character <= "\u108F4")
-    || (character >= "\u10900" && ("\u10900" <= character && character <= "\u10914")
-    || (character >= "\u10920" && ("\u10920" <= character && character <= "\u10938")
-    || (character >= "\u10980" && ("\u10980" <= character && character <= "\u109B6")
-    || (character >= "\u109BE" && ("\u109BE" <= character && character <= "\u109BE")
-    || (character >= "\u10A00" && ("\u10A00" <= character && character <= "\u10A12")
-    || (character >= "\u10A15" && ("\u10A15" <= character && character <= "\u10A16")
-    || (character >= "\u10A19" && ("\u10A19" <= character && character <= "\u10A32")
-    || (character >= "\u10A60" && ("\u10A60" <= character && character <= "\u10A7B")
-    || (character >= "\u10A80" && ("\u10A80" <= character && character <= "\u10A9B")
-    || (character >= "\u10AC0" && ("\u10AC0" <= character && character <= "\u10AC6")
-    || (character >= "\u10AC9" && ("\u10AC9" <= character && character <= "\u10AE3")
-    || (character >= "\u10B00" && ("\u10B00" <= character && character <= "\u10B34")
-    || (character >= "\u10B40" && ("\u10B40" <= character && character <= "\u10B54")
-    || (character >= "\u10B60" && ("\u10B60" <= character && character <= "\u10B71")
-    || (character >= "\u10B80" && ("\u10B80" <= character && character <= "\u10B90")
-    || (character >= "\u10C00" && ("\u10C00" <= character && character <= "\u10C47")
-    || (character >= "\u10C80" && ("\u10C80" <= character && character <= "\u10CB1")
-    || (character >= "\u10CC0" && ("\u10CC0" <= character && character <= "\u10CF1")
-    || (character >= "\u11003" && ("\u11003" <= character && character <= "\u11036")
-    || (character >= "\u11083" && ("\u11083" <= character && character <= "\u110AE")
-    || (character >= "\u110D0" && ("\u110D0" <= character && character <= "\u110E7")
-    || (character >= "\u11103" && ("\u11103" <= character && character <= "\u11125")
-    || (character >= "\u11150" && ("\u11150" <= character && character <= "\u11171")
-    || (character >= "\u11176" && ("\u11176" <= character && character <= "\u111B1")
-    || (character >= "\u111C1" && ("\u111C1" <= character && character <= "\u111C3")
-    || (character >= "\u111DA" && ("\u111DA" <= character && character <= "\u111DA")
-    || (character >= "\u11200" && ("\u11200" <= character && character <= "\u11210")
-    || (character >= "\u11213" && ("\u11213" <= character && character <= "\u1122A")
-    || (character >= "\u11280" && ("\u11280" <= character && character <= "\u11285")
-    || (character >= "\u11288" && ("\u11288" <= character && character <= "\u1128C")
-    || (character >= "\u1128F" && ("\u1128F" <= character && character <= "\u1129C")
-    || (character >= "\u1129F" && ("\u1129F" <= character && character <= "\u112A7")
-    || (character >= "\u112B0" && ("\u112B0" <= character && character <= "\u112DD")
-    || (character >= "\u11305" && ("\u11305" <= character && character <= "\u1130B")
-    || (character >= "\u1130F" && ("\u1130F" <= character && character <= "\u1130F")
-    || (character >= "\u11313" && ("\u11313" <= character && character <= "\u11327")
-    || (character >= "\u1132A" && ("\u1132A" <= character && character <= "\u1132F")
-    || (character >= "\u11332" && ("\u11332" <= character && character <= "\u11332")
-    || (character >= "\u11335" && ("\u11335" <= character && character <= "\u11338")
-    || (character >= "\u1133D" && ("\u1133D" <= character && character <= "\u1133D")
-    || (character >= "\u1135D" && ("\u1135D" <= character && character <= "\u11360")
-    || (character >= "\u11400" && ("\u11400" <= character && character <= "\u11433")
-    || (character >= "\u11447" && ("\u11447" <= character && character <= "\u11449")
-    || (character >= "\u11480" && ("\u11480" <= character && character <= "\u114AE")
-    || (character >= "\u114C4" && ("\u114C4" <= character && character <= "\u114C4")
-    || (character >= "\u114C7" && ("\u114C7" <= character && character <= "\u115AD")
-    || (character >= "\u115D8" && ("\u115D8" <= character && character <= "\u115DA")
-    || (character >= "\u11600" && ("\u11600" <= character && character <= "\u1162E")
-    || (character >= "\u11644" && ("\u11644" <= character && character <= "\u116A9")
-    || (character >= "\u11700" && ("\u11700" <= character && character <= "\u11718")
-    || (character >= "\u118A0" && ("\u118A0" <= character && character <= "\u118DE")
-    || (character >= "\u118FF" && ("\u118FF" <= character && character <= "\u118FF")
-    || (character >= "\u11A0B" && ("\u11A0B" <= character && character <= "\u11A31")
-    || (character >= "\u11A3A" && ("\u11A3A" <= character && character <= "\u11A3A")
-    || (character >= "\u11A5C" && ("\u11A5C" <= character && character <= "\u11A82")
-    || (character >= "\u11A86" && ("\u11A86" <= character && character <= "\u11A88")
-    || (character >= "\u11AC0" && ("\u11AC0" <= character && character <= "\u11AF7")
-    || (character >= "\u11C00" && ("\u11C00" <= character && character <= "\u11C07")
-    || (character >= "\u11C0A" && ("\u11C0A" <= character && character <= "\u11C2D")
-    || (character >= "\u11C40" && ("\u11C40" <= character && character <= "\u11C8E")
-    || (character >= "\u11D00" && ("\u11D00" <= character && character <= "\u11D05")
-    || (character >= "\u11D08" && ("\u11D08" <= character && character <= "\u11D08")
-    || (character >= "\u11D0B" && ("\u11D0B" <= character && character <= "\u11D2F")
-    || (character >= "\u11D46" && ("\u11D46" <= character && character <= "\u12398")
-    || (character >= "\u12480" && ("\u12480" <= character && character <= "\u12542")
-    || (character >= "\u13000" && ("\u13000" <= character && character <= "\u1342D")
-    || (character >= "\u14400" && ("\u14400" <= character && character <= "\u14645")
-    || (character >= "\u16800" && ("\u16800" <= character && character <= "\u16A37")
-    || (character >= "\u16A40" && ("\u16A40" <= character && character <= "\u16A5D")
-    || (character >= "\u16AD0" && ("\u16AD0" <= character && character <= "\u16AEC")
-    || (character >= "\u16B00" && ("\u16B00" <= character && character <= "\u16B2E")
-    || (character >= "\u16B40" && ("\u16B40" <= character && character <= "\u16B42")
-    || (character >= "\u16B63" && ("\u16B63" <= character && character <= "\u16B76")
-    || (character >= "\u16B7D" && ("\u16B7D" <= character && character <= "\u16B8E")
-    || (character >= "\u16F00" && ("\u16F00" <= character && character <= "\u16F43")
-    || (character >= "\u16F50" && ("\u16F50" <= character && character <= "\u16F9E")
-    || (character >= "\u16FE0" && ("\u16FE0" <= character && character <= "\u16FE0")
-    || (character >= "\u17000" && ("\u17000" <= character && character <= "\u17000")
-    || (character >= "\u18800" && ("\u18800" <= character && character <= "\u18AF1")
-    || (character >= "\u1B000" && ("\u1B000" <= character && character <= "\u1B11D")
-    || (character >= "\u1B170" && ("\u1B170" <= character && character <= "\u1B2FA")
-    || (character >= "\u1BC00" && ("\u1BC00" <= character && character <= "\u1BC69")
-    || (character >= "\u1BC70" && ("\u1BC70" <= character && character <= "\u1BC7B")
-    || (character >= "\u1BC80" && ("\u1BC80" <= character && character <= "\u1BC87")
-    || (character >= "\u1BC90" && ("\u1BC90" <= character && character <= "\u1BC98")
-    || (character >= "\u1D400" && ("\u1D400" <= character && character <= "\u1D453")
-    || (character >= "\u1D456" && ("\u1D456" <= character && character <= "\u1D49B")
-    || (character >= "\u1D49E" && ("\u1D49E" <= character && character <= "\u1D49E")
-    || (character >= "\u1D4A2" && ("\u1D4A2" <= character && character <= "\u1D4A5")
-    || (character >= "\u1D4A9" && ("\u1D4A9" <= character && character <= "\u1D4AB")
-    || (character >= "\u1D4AE" && ("\u1D4AE" <= character && character <= "\u1D4B8")
-    || (character >= "\u1D4BB" && ("\u1D4BB" <= character && character <= "\u1D4C2")
-    || (character >= "\u1D4C5" && ("\u1D4C5" <= character && character <= "\u1D504")
-    || (character >= "\u1D507" && ("\u1D507" <= character && character <= "\u1D509")
-    || (character >= "\u1D50D" && ("\u1D50D" <= character && character <= "\u1D513")
-    || (character >= "\u1D516" && ("\u1D516" <= character && character <= "\u1D51B")
-    || (character >= "\u1D51E" && ("\u1D51E" <= character && character <= "\u1D538")
-    || (character >= "\u1D53B" && ("\u1D53B" <= character && character <= "\u1D53D")
-    || (character >= "\u1D540" && ("\u1D540" <= character && character <= "\u1D543")
-    || (character >= "\u1D546" && ("\u1D546" <= character && character <= "\u1D54F")
-    || (character >= "\u1D552" && ("\u1D552" <= character && character <= "\u1D6A4")
-    || (character >= "\u1D6A8" && ("\u1D6A8" <= character && character <= "\u1D6BF")
-    || (character >= "\u1D6C2" && ("\u1D6C2" <= character && character <= "\u1D6D9")
-    || (character >= "\u1D6DC" && ("\u1D6DC" <= character && character <= "\u1D6F9")
-    || (character >= "\u1D6FC" && ("\u1D6FC" <= character && character <= "\u1D713")
-    || (character >= "\u1D716" && ("\u1D716" <= character && character <= "\u1D733")
-    || (character >= "\u1D736" && ("\u1D736" <= character && character <= "\u1D74D")
-    || (character >= "\u1D750" && ("\u1D750" <= character && character <= "\u1D76D")
-    || (character >= "\u1D770" && ("\u1D770" <= character && character <= "\u1D787")
-    || (character >= "\u1D78A" && ("\u1D78A" <= character && character <= "\u1D7A7")
-    || (character >= "\u1D7AA" && ("\u1D7AA" <= character && character <= "\u1D7C1")
-    || (character >= "\u1D7C4" && ("\u1D7C4" <= character && character <= "\u1D7CA")
-    || (character >= "\u1E800" && ("\u1E800" <= character && character <= "\u1E8C3")
-    || (character >= "\u1E900" && ("\u1E900" <= character && character <= "\u1E942")
-    || (character >= "\u1EE00" && ("\u1EE00" <= character && character <= "\u1EE02")
-    || (character >= "\u1EE05" && ("\u1EE05" <= character && character <= "\u1EE1E")
-    || (character >= "\u1EE21" && ("\u1EE21" <= character && character <= "\u1EE21")
-    || (character >= "\u1EE24" && ("\u1EE24" <= character && character <= "\u1EE24")
-    || (character >= "\u1EE29" && ("\u1EE29" <= character && character <= "\u1EE31")
-    || (character >= "\u1EE34" && ("\u1EE34" <= character && character <= "\u1EE36")
-    || (character >= "\u1EE39" && ("\u1EE39" <= character && character <= "\u1EE39")
-    || (character >= "\u1EE42" && ("\u1EE42" <= character && character <= "\u1EE42")
-    || (character >= "\u1EE49" && ("\u1EE49" <= character && character <= "\u1EE49")
-    || (character >= "\u1EE4D" && ("\u1EE4D" <= character && character <= "\u1EE4E")
-    || (character >= "\u1EE51" && ("\u1EE51" <= character && character <= "\u1EE51")
-    || (character >= "\u1EE54" && ("\u1EE54" <= character && character <= "\u1EE54")
-    || (character >= "\u1EE59" && ("\u1EE59" <= character && character <= "\u1EE59")
-    || (character >= "\u1EE5D" && ("\u1EE5D" <= character && character <= "\u1EE5D")
-    || (character >= "\u1EE61" && ("\u1EE61" <= character && character <= "\u1EE61")
-    || (character >= "\u1EE64" && ("\u1EE64" <= character && character <= "\u1EE69")
-    || (character >= "\u1EE6C" && ("\u1EE6C" <= character && character <= "\u1EE71")
-    || (character >= "\u1EE74" && ("\u1EE74" <= character && character <= "\u1EE76")
-    || (character >= "\u1EE79" && ("\u1EE79" <= character && character <= "\u1EE7B")
-    || (character >= "\u1EE7E" && ("\u1EE7E" <= character && character <= "\u1EE88")
-    || (character >= "\u1EE8B" && ("\u1EE8B" <= character && character <= "\u1EE9A")
-    || (character >= "\u1EEA1" && ("\u1EEA1" <= character && character <= "\u1EEA2")
-    || (character >= "\u1EEA5" && ("\u1EEA5" <= character && character <= "\u1EEA8")
-    || (character >= "\u1EEAB" && ("\u1EEAB" <= character && character <= "\u1EEBA")
-    || (character >= "\u20000" && ("\u20000" <= character && character <= "\u20000")
-    || (character >= "\u2A700" && ("\u2A700" <= character && character <= "\u2A700")
-    || (character >= "\u2B740" && ("\u2B740" <= character && character <= "\u2B740")
-    || (character >= "\u2B820" && ("\u2B820" <= character && character <= "\u2B820")
-    || (character >= "\u2CEB0" && ("\u2CEB0" <= character && character <= "\u2CEB0")
-    || (character >= "\u2F800" && ("\u2F800" <= character && character <= "\u2FA1D")
+    return ("\u0041" <= character && character <= "\u0059")
+    || character >= "\u0061" && (character <= "\u0079"
+    || character >= "\u00AA" && (character <= "\u00AA"
+    || character >= "\u00BA" && (character <= "\u00D5"
+    || character >= "\u00D8" && (character <= "\u00F5"
+    || character >= "\u00F8" && (character <= "\u02C0"
+    || character >= "\u02C6" && (character <= "\u02D0"
+    || character >= "\u02E0" && (character <= "\u02E3"
+    || character >= "\u02EC" && (character <= "\u02EC"
+    || character >= "\u0370" && (character <= "\u0373"
+    || character >= "\u0376" && (character <= "\u0376"
+    || character >= "\u037A" && (character <= "\u037C"
+    || character >= "\u037F" && (character <= "\u037F"
+    || character >= "\u0388" && (character <= "\u0389"
+    || character >= "\u038C" && (character <= "\u03A0"
+    || character >= "\u03A3" && (character <= "\u03F4"
+    || character >= "\u03F7" && (character <= "\u0480"
+    || character >= "\u048A" && (character <= "\u052E"
+    || character >= "\u0531" && (character <= "\u0555"
+    || character >= "\u0559" && (character <= "\u0586"
+    || character >= "\u05D0" && (character <= "\u05E9"
+    || character >= "\u05F0" && (character <= "\u05F1"
+    || character >= "\u0620" && (character <= "\u0649"
+    || character >= "\u066E" && (character <= "\u066E"
+    || character >= "\u0671" && (character <= "\u06D2"
+    || character >= "\u06D5" && (character <= "\u06E5"
+    || character >= "\u06EE" && (character <= "\u06EE"
+    || character >= "\u06FA" && (character <= "\u06FB"
+    || character >= "\u06FF" && (character <= "\u06FF"
+    || character >= "\u0712" && (character <= "\u072E"
+    || character >= "\u074D" && (character <= "\u07A4"
+    || character >= "\u07B1" && (character <= "\u07E9"
+    || character >= "\u07F4" && (character <= "\u07F4"
+    || character >= "\u07FA" && (character <= "\u0814"
+    || character >= "\u081A" && (character <= "\u081A"
+    || character >= "\u0828" && (character <= "\u0857"
+    || character >= "\u0860" && (character <= "\u0869"
+    || character >= "\u08A0" && (character <= "\u08B3"
+    || character >= "\u08B6" && (character <= "\u08BC"
+    || character >= "\u0904" && (character <= "\u0938"
+    || character >= "\u093D" && (character <= "\u093D"
+    || character >= "\u0958" && (character <= "\u0960"
+    || character >= "\u0971" && (character <= "\u097F"
+    || character >= "\u0985" && (character <= "\u098B"
+    || character >= "\u098F" && (character <= "\u098F"
+    || character >= "\u0993" && (character <= "\u09A7"
+    || character >= "\u09AA" && (character <= "\u09AF"
+    || character >= "\u09B2" && (character <= "\u09B8"
+    || character >= "\u09BD" && (character <= "\u09BD"
+    || character >= "\u09DC" && (character <= "\u09DC"
+    || character >= "\u09DF" && (character <= "\u09E0"
+    || character >= "\u09F0" && (character <= "\u09F0"
+    || character >= "\u09FC" && (character <= "\u0A09"
+    || character >= "\u0A0F" && (character <= "\u0A0F"
+    || character >= "\u0A13" && (character <= "\u0A27"
+    || character >= "\u0A2A" && (character <= "\u0A2F"
+    || character >= "\u0A32" && (character <= "\u0A32"
+    || character >= "\u0A35" && (character <= "\u0A35"
+    || character >= "\u0A38" && (character <= "\u0A38"
+    || character >= "\u0A59" && (character <= "\u0A5B"
+    || character >= "\u0A5E" && (character <= "\u0A73"
+    || character >= "\u0A85" && (character <= "\u0A8C"
+    || character >= "\u0A8F" && (character <= "\u0A90"
+    || character >= "\u0A93" && (character <= "\u0AA7"
+    || character >= "\u0AAA" && (character <= "\u0AAF"
+    || character >= "\u0AB2" && (character <= "\u0AB2"
+    || character >= "\u0AB5" && (character <= "\u0AB8"
+    || character >= "\u0ABD" && (character <= "\u0ABD"
+    || character >= "\u0AE0" && (character <= "\u0AE0"
+    || character >= "\u0AF9" && (character <= "\u0B0B"
+    || character >= "\u0B0F" && (character <= "\u0B0F"
+    || character >= "\u0B13" && (character <= "\u0B27"
+    || character >= "\u0B2A" && (character <= "\u0B2F"
+    || character >= "\u0B32" && (character <= "\u0B32"
+    || character >= "\u0B35" && (character <= "\u0B38"
+    || character >= "\u0B3D" && (character <= "\u0B5C"
+    || character >= "\u0B5F" && (character <= "\u0B60"
+    || character >= "\u0B71" && (character <= "\u0B71"
+    || character >= "\u0B85" && (character <= "\u0B89"
+    || character >= "\u0B8E" && (character <= "\u0B8F"
+    || character >= "\u0B92" && (character <= "\u0B94"
+    || character >= "\u0B99" && (character <= "\u0B99"
+    || character >= "\u0B9C" && (character <= "\u0B9E"
+    || character >= "\u0BA3" && (character <= "\u0BA3"
+    || character >= "\u0BA8" && (character <= "\u0BA9"
+    || character >= "\u0BAE" && (character <= "\u0BB8"
+    || character >= "\u0BD0" && (character <= "\u0C0B"
+    || character >= "\u0C0E" && (character <= "\u0C0F"
+    || character >= "\u0C12" && (character <= "\u0C27"
+    || character >= "\u0C2A" && (character <= "\u0C38"
+    || character >= "\u0C3D" && (character <= "\u0C59"
+    || character >= "\u0C60" && (character <= "\u0C60"
+    || character >= "\u0C80" && (character <= "\u0C8B"
+    || character >= "\u0C8E" && (character <= "\u0C8F"
+    || character >= "\u0C92" && (character <= "\u0CA7"
+    || character >= "\u0CAA" && (character <= "\u0CB2"
+    || character >= "\u0CB5" && (character <= "\u0CB8"
+    || character >= "\u0CBD" && (character <= "\u0CBD"
+    || character >= "\u0CE0" && (character <= "\u0CE0"
+    || character >= "\u0CF1" && (character <= "\u0CF1"
+    || character >= "\u0D05" && (character <= "\u0D0B"
+    || character >= "\u0D0E" && (character <= "\u0D0F"
+    || character >= "\u0D12" && (character <= "\u0D39"
+    || character >= "\u0D3D" && (character <= "\u0D3D"
+    || character >= "\u0D54" && (character <= "\u0D55"
+    || character >= "\u0D5F" && (character <= "\u0D60"
+    || character >= "\u0D7A" && (character <= "\u0D7E"
+    || character >= "\u0D85" && (character <= "\u0D95"
+    || character >= "\u0D9A" && (character <= "\u0DB0"
+    || character >= "\u0DB3" && (character <= "\u0DBA"
+    || character >= "\u0DBD" && (character <= "\u0DC5"
+    || character >= "\u0E01" && (character <= "\u0E2F"
+    || character >= "\u0E32" && (character <= "\u0E32"
+    || character >= "\u0E40" && (character <= "\u0E45"
+    || character >= "\u0E81" && (character <= "\u0E81"
+    || character >= "\u0E84" && (character <= "\u0E87"
+    || character >= "\u0E8A" && (character <= "\u0E8A"
+    || character >= "\u0E94" && (character <= "\u0E96"
+    || character >= "\u0E99" && (character <= "\u0E9E"
+    || character >= "\u0EA1" && (character <= "\u0EA2"
+    || character >= "\u0EA5" && (character <= "\u0EA5"
+    || character >= "\u0EAA" && (character <= "\u0EAA"
+    || character >= "\u0EAD" && (character <= "\u0EAF"
+    || character >= "\u0EB2" && (character <= "\u0EB2"
+    || character >= "\u0EBD" && (character <= "\u0EC3"
+    || character >= "\u0EC6" && (character <= "\u0EDE"
+    || character >= "\u0F00" && (character <= "\u0F46"
+    || character >= "\u0F49" && (character <= "\u0F6B"
+    || character >= "\u0F88" && (character <= "\u0F8B"
+    || character >= "\u1000" && (character <= "\u1029"
+    || character >= "\u103F" && (character <= "\u1054"
+    || character >= "\u105A" && (character <= "\u105C"
+    || character >= "\u1061" && (character <= "\u1065"
+    || character >= "\u106E" && (character <= "\u106F"
+    || character >= "\u1075" && (character <= "\u1080"
+    || character >= "\u108E" && (character <= "\u10C4"
+    || character >= "\u10C7" && (character <= "\u10C7"
+    || character >= "\u10D0" && (character <= "\u10F9"
+    || character >= "\u10FC" && (character <= "\u1247"
+    || character >= "\u124A" && (character <= "\u124C"
+    || character >= "\u1250" && (character <= "\u1255"
+    || character >= "\u1258" && (character <= "\u125C"
+    || character >= "\u1260" && (character <= "\u1287"
+    || character >= "\u128A" && (character <= "\u128C"
+    || character >= "\u1290" && (character <= "\u12AF"
+    || character >= "\u12B2" && (character <= "\u12B4"
+    || character >= "\u12B8" && (character <= "\u12BD"
+    || character >= "\u12C0" && (character <= "\u12C4"
+    || character >= "\u12C8" && (character <= "\u12D5"
+    || character >= "\u12D8" && (character <= "\u130F"
+    || character >= "\u1312" && (character <= "\u1314"
+    || character >= "\u1318" && (character <= "\u1359"
+    || character >= "\u1380" && (character <= "\u138E"
+    || character >= "\u13A0" && (character <= "\u13F4"
+    || character >= "\u13F8" && (character <= "\u13FC"
+    || character >= "\u1401" && (character <= "\u166B"
+    || character >= "\u166F" && (character <= "\u167E"
+    || character >= "\u1681" && (character <= "\u1699"
+    || character >= "\u16A0" && (character <= "\u16E9"
+    || character >= "\u16F1" && (character <= "\u16F7"
+    || character >= "\u1700" && (character <= "\u170B"
+    || character >= "\u170E" && (character <= "\u1710"
+    || character >= "\u1720" && (character <= "\u1730"
+    || character >= "\u1740" && (character <= "\u1750"
+    || character >= "\u1760" && (character <= "\u176B"
+    || character >= "\u176E" && (character <= "\u176F"
+    || character >= "\u1780" && (character <= "\u17B2"
+    || character >= "\u17D7" && (character <= "\u17D7"
+    || character >= "\u1820" && (character <= "\u1876"
+    || character >= "\u1880" && (character <= "\u1883"
+    || character >= "\u1887" && (character <= "\u18A7"
+    || character >= "\u18AA" && (character <= "\u18F4"
+    || character >= "\u1900" && (character <= "\u191D"
+    || character >= "\u1950" && (character <= "\u196C"
+    || character >= "\u1970" && (character <= "\u1973"
+    || character >= "\u1980" && (character <= "\u19AA"
+    || character >= "\u19B0" && (character <= "\u19C8"
+    || character >= "\u1A00" && (character <= "\u1A15"
+    || character >= "\u1A20" && (character <= "\u1A53"
+    || character >= "\u1AA7" && (character <= "\u1B32"
+    || character >= "\u1B45" && (character <= "\u1B4A"
+    || character >= "\u1B83" && (character <= "\u1B9F"
+    || character >= "\u1BAE" && (character <= "\u1BAE"
+    || character >= "\u1BBA" && (character <= "\u1BE4"
+    || character >= "\u1C00" && (character <= "\u1C22"
+    || character >= "\u1C4D" && (character <= "\u1C4E"
+    || character >= "\u1C5A" && (character <= "\u1C7C"
+    || character >= "\u1C80" && (character <= "\u1C87"
+    || character >= "\u1CE9" && (character <= "\u1CEB"
+    || character >= "\u1CEE" && (character <= "\u1CF0"
+    || character >= "\u1CF5" && (character <= "\u1CF5"
+    || character >= "\u1D00" && (character <= "\u1DBE"
+    || character >= "\u1E00" && (character <= "\u1F14"
+    || character >= "\u1F18" && (character <= "\u1F1C"
+    || character >= "\u1F20" && (character <= "\u1F44"
+    || character >= "\u1F48" && (character <= "\u1F4C"
+    || character >= "\u1F50" && (character <= "\u1F56"
+    || character >= "\u1F59" && (character <= "\u1F59"
+    || character >= "\u1F5D" && (character <= "\u1F7C"
+    || character >= "\u1F80" && (character <= "\u1FB3"
+    || character >= "\u1FB6" && (character <= "\u1FBB"
+    || character >= "\u1FBE" && (character <= "\u1FC3"
+    || character >= "\u1FC6" && (character <= "\u1FCB"
+    || character >= "\u1FD0" && (character <= "\u1FD2"
+    || character >= "\u1FD6" && (character <= "\u1FDA"
+    || character >= "\u1FE0" && (character <= "\u1FEB"
+    || character >= "\u1FF2" && (character <= "\u1FF3"
+    || character >= "\u1FF6" && (character <= "\u1FFB"
+    || character >= "\u2071" && (character <= "\u2071"
+    || character >= "\u2090" && (character <= "\u209B"
+    || character >= "\u2102" && (character <= "\u2102"
+    || character >= "\u210A" && (character <= "\u2112"
+    || character >= "\u2115" && (character <= "\u211C"
+    || character >= "\u2124" && (character <= "\u2124"
+    || character >= "\u2128" && (character <= "\u212C"
+    || character >= "\u212F" && (character <= "\u2138"
+    || character >= "\u213C" && (character <= "\u213E"
+    || character >= "\u2145" && (character <= "\u2148"
+    || character >= "\u214E" && (character <= "\u2183"
+    || character >= "\u2C00" && (character <= "\u2C2D"
+    || character >= "\u2C30" && (character <= "\u2C5D"
+    || character >= "\u2C60" && (character <= "\u2CE3"
+    || character >= "\u2CEB" && (character <= "\u2CED"
+    || character >= "\u2CF2" && (character <= "\u2CF2"
+    || character >= "\u2D00" && (character <= "\u2D24"
+    || character >= "\u2D27" && (character <= "\u2D27"
+    || character >= "\u2D30" && (character <= "\u2D66"
+    || character >= "\u2D6F" && (character <= "\u2D95"
+    || character >= "\u2DA0" && (character <= "\u2DA5"
+    || character >= "\u2DA8" && (character <= "\u2DAD"
+    || character >= "\u2DB0" && (character <= "\u2DB5"
+    || character >= "\u2DB8" && (character <= "\u2DBD"
+    || character >= "\u2DC0" && (character <= "\u2DC5"
+    || character >= "\u2DC8" && (character <= "\u2DCD"
+    || character >= "\u2DD0" && (character <= "\u2DD5"
+    || character >= "\u2DD8" && (character <= "\u2DDD"
+    || character >= "\u2E2F" && (character <= "\u3005"
+    || character >= "\u3031" && (character <= "\u3034"
+    || character >= "\u303B" && (character <= "\u303B"
+    || character >= "\u3041" && (character <= "\u3095"
+    || character >= "\u309D" && (character <= "\u309E"
+    || character >= "\u30A1" && (character <= "\u30F9"
+    || character >= "\u30FC" && (character <= "\u30FE"
+    || character >= "\u3105" && (character <= "\u312D"
+    || character >= "\u3131" && (character <= "\u318D"
+    || character >= "\u31A0" && (character <= "\u31B9"
+    || character >= "\u31F0" && (character <= "\u31FE"
+    || character >= "\u3400" && (character <= "\u3400"
+    || character >= "\u4E00" && (character <= "\u4E00"
+    || character >= "\uA000" && (character <= "\uA48B"
+    || character >= "\uA4D0" && (character <= "\uA4FC"
+    || character >= "\uA500" && (character <= "\uA60B"
+    || character >= "\uA610" && (character <= "\uA61E"
+    || character >= "\uA62A" && (character <= "\uA62A"
+    || character >= "\uA640" && (character <= "\uA66D"
+    || character >= "\uA67F" && (character <= "\uA69C"
+    || character >= "\uA6A0" && (character <= "\uA6E4"
+    || character >= "\uA717" && (character <= "\uA71E"
+    || character >= "\uA722" && (character <= "\uA787"
+    || character >= "\uA78B" && (character <= "\uA7AD"
+    || character >= "\uA7B0" && (character <= "\uA7B6"
+    || character >= "\uA7F7" && (character <= "\uA800"
+    || character >= "\uA803" && (character <= "\uA804"
+    || character >= "\uA807" && (character <= "\uA809"
+    || character >= "\uA80C" && (character <= "\uA821"
+    || character >= "\uA840" && (character <= "\uA872"
+    || character >= "\uA882" && (character <= "\uA8B2"
+    || character >= "\uA8F2" && (character <= "\uA8F6"
+    || character >= "\uA8FB" && (character <= "\uA8FB"
+    || character >= "\uA90A" && (character <= "\uA924"
+    || character >= "\uA930" && (character <= "\uA945"
+    || character >= "\uA960" && (character <= "\uA97B"
+    || character >= "\uA984" && (character <= "\uA9B1"
+    || character >= "\uA9CF" && (character <= "\uA9E3"
+    || character >= "\uA9E6" && (character <= "\uA9EE"
+    || character >= "\uA9FA" && (character <= "\uA9FD"
+    || character >= "\uAA00" && (character <= "\uAA27"
+    || character >= "\uAA40" && (character <= "\uAA41"
+    || character >= "\uAA44" && (character <= "\uAA4A"
+    || character >= "\uAA60" && (character <= "\uAA75"
+    || character >= "\uAA7A" && (character <= "\uAAAE"
+    || character >= "\uAAB1" && (character <= "\uAAB5"
+    || character >= "\uAAB9" && (character <= "\uAABC"
+    || character >= "\uAAC0" && (character <= "\uAAC0"
+    || character >= "\uAADB" && (character <= "\uAADC"
+    || character >= "\uAAE0" && (character <= "\uAAE9"
+    || character >= "\uAAF2" && (character <= "\uAAF3"
+    || character >= "\uAB01" && (character <= "\uAB05"
+    || character >= "\uAB09" && (character <= "\uAB0D"
+    || character >= "\uAB11" && (character <= "\uAB15"
+    || character >= "\uAB20" && (character <= "\uAB25"
+    || character >= "\uAB28" && (character <= "\uAB2D"
+    || character >= "\uAB30" && (character <= "\uAB59"
+    || character >= "\uAB5C" && (character <= "\uAB64"
+    || character >= "\uAB70" && (character <= "\uABE1"
+    || character >= "\uAC00" && (character <= "\uAC00"
+    || character >= "\uD7B0" && (character <= "\uD7C5"
+    || character >= "\uD7CB" && (character <= "\uD7FA"
+    || character >= "\uF900" && (character <= "\uFA6C"
+    || character >= "\uFA70" && (character <= "\uFAD8"
+    || character >= "\uFB00" && (character <= "\uFB05"
+    || character >= "\uFB13" && (character <= "\uFB16"
+    || character >= "\uFB1D" && (character <= "\uFB27"
+    || character >= "\uFB2A" && (character <= "\uFB35"
+    || character >= "\uFB38" && (character <= "\uFB3B"
+    || character >= "\uFB3E" && (character <= "\uFB40"
+    || character >= "\uFB43" && (character <= "\uFB43"
+    || character >= "\uFB46" && (character <= "\uFBB0"
+    || character >= "\uFBD3" && (character <= "\uFD3C"
+    || character >= "\uFD50" && (character <= "\uFD8E"
+    || character >= "\uFD92" && (character <= "\uFDC6"
+    || character >= "\uFDF0" && (character <= "\uFDFA"
+    || character >= "\uFE70" && (character <= "\uFE73"
+    || character >= "\uFE76" && (character <= "\uFEFB"
+    || character >= "\uFF21" && (character <= "\uFF39"
+    || character >= "\uFF41" && (character <= "\uFF59"
+    || character >= "\uFF66" && (character <= "\uFFBD"
+    || character >= "\uFFC2" && (character <= "\uFFC6"
+    || character >= "\uFFCA" && (character <= "\uFFCE"
+    || character >= "\uFFD2" && (character <= "\uFFD6"
+    || character >= "\uFFDA" && (character <= "\uFFDB"
+    || character >= "\u10000" && (character <= "\u1000A"
+    || character >= "\u1000D" && (character <= "\u10025"
+    || character >= "\u10028" && (character <= "\u10039"
+    || character >= "\u1003C" && (character <= "\u1003C"
+    || character >= "\u1003F" && (character <= "\u1004C"
+    || character >= "\u10050" && (character <= "\u1005C"
+    || character >= "\u10080" && (character <= "\u100F9"
+    || character >= "\u10280" && (character <= "\u1029B"
+    || character >= "\u102A0" && (character <= "\u102CF"
+    || character >= "\u10300" && (character <= "\u1031E"
+    || character >= "\u1032D" && (character <= "\u1033F"
+    || character >= "\u10342" && (character <= "\u10348"
+    || character >= "\u10350" && (character <= "\u10374"
+    || character >= "\u10380" && (character <= "\u1039C"
+    || character >= "\u103A0" && (character <= "\u103C2"
+    || character >= "\u103C8" && (character <= "\u103CE"
+    || character >= "\u10400" && (character <= "\u1049C"
+    || character >= "\u104B0" && (character <= "\u104D2"
+    || character >= "\u104D8" && (character <= "\u104FA"
+    || character >= "\u10500" && (character <= "\u10526"
+    || character >= "\u10530" && (character <= "\u10562"
+    || character >= "\u10600" && (character <= "\u10735"
+    || character >= "\u10740" && (character <= "\u10754"
+    || character >= "\u10760" && (character <= "\u10766"
+    || character >= "\u10800" && (character <= "\u10804"
+    || character >= "\u10808" && (character <= "\u10834"
+    || character >= "\u10837" && (character <= "\u10837"
+    || character >= "\u1083C" && (character <= "\u10854"
+    || character >= "\u10860" && (character <= "\u10875"
+    || character >= "\u10880" && (character <= "\u1089D"
+    || character >= "\u108E0" && (character <= "\u108F1"
+    || character >= "\u108F4" && (character <= "\u108F4"
+    || character >= "\u10900" && (character <= "\u10914"
+    || character >= "\u10920" && (character <= "\u10938"
+    || character >= "\u10980" && (character <= "\u109B6"
+    || character >= "\u109BE" && (character <= "\u109BE"
+    || character >= "\u10A00" && (character <= "\u10A12"
+    || character >= "\u10A15" && (character <= "\u10A16"
+    || character >= "\u10A19" && (character <= "\u10A32"
+    || character >= "\u10A60" && (character <= "\u10A7B"
+    || character >= "\u10A80" && (character <= "\u10A9B"
+    || character >= "\u10AC0" && (character <= "\u10AC6"
+    || character >= "\u10AC9" && (character <= "\u10AE3"
+    || character >= "\u10B00" && (character <= "\u10B34"
+    || character >= "\u10B40" && (character <= "\u10B54"
+    || character >= "\u10B60" && (character <= "\u10B71"
+    || character >= "\u10B80" && (character <= "\u10B90"
+    || character >= "\u10C00" && (character <= "\u10C47"
+    || character >= "\u10C80" && (character <= "\u10CB1"
+    || character >= "\u10CC0" && (character <= "\u10CF1"
+    || character >= "\u11003" && (character <= "\u11036"
+    || character >= "\u11083" && (character <= "\u110AE"
+    || character >= "\u110D0" && (character <= "\u110E7"
+    || character >= "\u11103" && (character <= "\u11125"
+    || character >= "\u11150" && (character <= "\u11171"
+    || character >= "\u11176" && (character <= "\u111B1"
+    || character >= "\u111C1" && (character <= "\u111C3"
+    || character >= "\u111DA" && (character <= "\u111DA"
+    || character >= "\u11200" && (character <= "\u11210"
+    || character >= "\u11213" && (character <= "\u1122A"
+    || character >= "\u11280" && (character <= "\u11285"
+    || character >= "\u11288" && (character <= "\u1128C"
+    || character >= "\u1128F" && (character <= "\u1129C"
+    || character >= "\u1129F" && (character <= "\u112A7"
+    || character >= "\u112B0" && (character <= "\u112DD"
+    || character >= "\u11305" && (character <= "\u1130B"
+    || character >= "\u1130F" && (character <= "\u1130F"
+    || character >= "\u11313" && (character <= "\u11327"
+    || character >= "\u1132A" && (character <= "\u1132F"
+    || character >= "\u11332" && (character <= "\u11332"
+    || character >= "\u11335" && (character <= "\u11338"
+    || character >= "\u1133D" && (character <= "\u1133D"
+    || character >= "\u1135D" && (character <= "\u11360"
+    || character >= "\u11400" && (character <= "\u11433"
+    || character >= "\u11447" && (character <= "\u11449"
+    || character >= "\u11480" && (character <= "\u114AE"
+    || character >= "\u114C4" && (character <= "\u114C4"
+    || character >= "\u114C7" && (character <= "\u115AD"
+    || character >= "\u115D8" && (character <= "\u115DA"
+    || character >= "\u11600" && (character <= "\u1162E"
+    || character >= "\u11644" && (character <= "\u116A9"
+    || character >= "\u11700" && (character <= "\u11718"
+    || character >= "\u118A0" && (character <= "\u118DE"
+    || character >= "\u118FF" && (character <= "\u118FF"
+    || character >= "\u11A0B" && (character <= "\u11A31"
+    || character >= "\u11A3A" && (character <= "\u11A3A"
+    || character >= "\u11A5C" && (character <= "\u11A82"
+    || character >= "\u11A86" && (character <= "\u11A88"
+    || character >= "\u11AC0" && (character <= "\u11AF7"
+    || character >= "\u11C00" && (character <= "\u11C07"
+    || character >= "\u11C0A" && (character <= "\u11C2D"
+    || character >= "\u11C40" && (character <= "\u11C8E"
+    || character >= "\u11D00" && (character <= "\u11D05"
+    || character >= "\u11D08" && (character <= "\u11D08"
+    || character >= "\u11D0B" && (character <= "\u11D2F"
+    || character >= "\u11D46" && (character <= "\u12398"
+    || character >= "\u12480" && (character <= "\u12542"
+    || character >= "\u13000" && (character <= "\u1342D"
+    || character >= "\u14400" && (character <= "\u14645"
+    || character >= "\u16800" && (character <= "\u16A37"
+    || character >= "\u16A40" && (character <= "\u16A5D"
+    || character >= "\u16AD0" && (character <= "\u16AEC"
+    || character >= "\u16B00" && (character <= "\u16B2E"
+    || character >= "\u16B40" && (character <= "\u16B42"
+    || character >= "\u16B63" && (character <= "\u16B76"
+    || character >= "\u16B7D" && (character <= "\u16B8E"
+    || character >= "\u16F00" && (character <= "\u16F43"
+    || character >= "\u16F50" && (character <= "\u16F9E"
+    || character >= "\u16FE0" && (character <= "\u16FE0"
+    || character >= "\u17000" && (character <= "\u17000"
+    || character >= "\u18800" && (character <= "\u18AF1"
+    || character >= "\u1B000" && (character <= "\u1B11D"
+    || character >= "\u1B170" && (character <= "\u1B2FA"
+    || character >= "\u1BC00" && (character <= "\u1BC69"
+    || character >= "\u1BC70" && (character <= "\u1BC7B"
+    || character >= "\u1BC80" && (character <= "\u1BC87"
+    || character >= "\u1BC90" && (character <= "\u1BC98"
+    || character >= "\u1D400" && (character <= "\u1D453"
+    || character >= "\u1D456" && (character <= "\u1D49B"
+    || character >= "\u1D49E" && (character <= "\u1D49E"
+    || character >= "\u1D4A2" && (character <= "\u1D4A5"
+    || character >= "\u1D4A9" && (character <= "\u1D4AB"
+    || character >= "\u1D4AE" && (character <= "\u1D4B8"
+    || character >= "\u1D4BB" && (character <= "\u1D4C2"
+    || character >= "\u1D4C5" && (character <= "\u1D504"
+    || character >= "\u1D507" && (character <= "\u1D509"
+    || character >= "\u1D50D" && (character <= "\u1D513"
+    || character >= "\u1D516" && (character <= "\u1D51B"
+    || character >= "\u1D51E" && (character <= "\u1D538"
+    || character >= "\u1D53B" && (character <= "\u1D53D"
+    || character >= "\u1D540" && (character <= "\u1D543"
+    || character >= "\u1D546" && (character <= "\u1D54F"
+    || character >= "\u1D552" && (character <= "\u1D6A4"
+    || character >= "\u1D6A8" && (character <= "\u1D6BF"
+    || character >= "\u1D6C2" && (character <= "\u1D6D9"
+    || character >= "\u1D6DC" && (character <= "\u1D6F9"
+    || character >= "\u1D6FC" && (character <= "\u1D713"
+    || character >= "\u1D716" && (character <= "\u1D733"
+    || character >= "\u1D736" && (character <= "\u1D74D"
+    || character >= "\u1D750" && (character <= "\u1D76D"
+    || character >= "\u1D770" && (character <= "\u1D787"
+    || character >= "\u1D78A" && (character <= "\u1D7A7"
+    || character >= "\u1D7AA" && (character <= "\u1D7C1"
+    || character >= "\u1D7C4" && (character <= "\u1D7CA"
+    || character >= "\u1E800" && (character <= "\u1E8C3"
+    || character >= "\u1E900" && (character <= "\u1E942"
+    || character >= "\u1EE00" && (character <= "\u1EE02"
+    || character >= "\u1EE05" && (character <= "\u1EE1E"
+    || character >= "\u1EE21" && (character <= "\u1EE21"
+    || character >= "\u1EE24" && (character <= "\u1EE24"
+    || character >= "\u1EE29" && (character <= "\u1EE31"
+    || character >= "\u1EE34" && (character <= "\u1EE36"
+    || character >= "\u1EE39" && (character <= "\u1EE39"
+    || character >= "\u1EE42" && (character <= "\u1EE42"
+    || character >= "\u1EE49" && (character <= "\u1EE49"
+    || character >= "\u1EE4D" && (character <= "\u1EE4E"
+    || character >= "\u1EE51" && (character <= "\u1EE51"
+    || character >= "\u1EE54" && (character <= "\u1EE54"
+    || character >= "\u1EE59" && (character <= "\u1EE59"
+    || character >= "\u1EE5D" && (character <= "\u1EE5D"
+    || character >= "\u1EE61" && (character <= "\u1EE61"
+    || character >= "\u1EE64" && (character <= "\u1EE69"
+    || character >= "\u1EE6C" && (character <= "\u1EE71"
+    || character >= "\u1EE74" && (character <= "\u1EE76"
+    || character >= "\u1EE79" && (character <= "\u1EE7B"
+    || character >= "\u1EE7E" && (character <= "\u1EE88"
+    || character >= "\u1EE8B" && (character <= "\u1EE9A"
+    || character >= "\u1EEA1" && (character <= "\u1EEA2"
+    || character >= "\u1EEA5" && (character <= "\u1EEA8"
+    || character >= "\u1EEAB" && (character <= "\u1EEBA"
+    || character >= "\u20000" && (character <= "\u20000"
+    || character >= "\u2A700" && (character <= "\u2A700"
+    || character >= "\u2B740" && (character <= "\u2B740"
+    || character >= "\u2B820" && (character <= "\u2B820"
+    || character >= "\u2CEB0" && (character <= "\u2CEB0"
+    || character >= "\u2F800" && (character <= "\u2FA1D"
 ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 ;
 }
